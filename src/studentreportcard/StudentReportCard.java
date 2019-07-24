@@ -22,7 +22,7 @@ public class StudentReportCard {
         while (true) {
 
             System.out.println("\n\n|--------------------------------------------------------|");
-            System.out.println("|    Welcome to Hong Software (copyrighted!)          |");
+            System.out.println("|       Welcome to Hong Software (copyrighted!)          |");
             System.out.println("|--------------------------------------------------------|");
 
             System.out.println("\nPlease Make a selection:");
@@ -36,13 +36,13 @@ public class StudentReportCard {
             System.out.println("\t[8] Delete Student");
             System.out.println("\t[9] Change score");
             System.out.println("\t[10] Change name");
-            System.out.println("\t[18] exit");
+            System.out.println("\t[11] exit");
             System.out.println("------------------------------------------------------------");
 
             System.out.println("Selection: ");
             int selection = scanner.nextInt();
 
-            if (selection == 18) {
+            if (selection == 11) {
                 // exit if selection = 3
                 break;
             }
@@ -59,7 +59,7 @@ public class StudentReportCard {
                 calculateAverage(students);
             } else if (selection == 4) {
                 System.out.println("The lowest score is ");
-                calculatelowest(students);
+                calculateLowest(students);
             } else if (selection == 5) {
                 System.out.println("The highest score is ");
                 calculateHighest(students);
@@ -199,7 +199,7 @@ public class StudentReportCard {
         return mylocation;
     }
 
-    public static void calculatelowest(String[][] students) {
+    public static void calculateLowest(String[][] students) {
         double lowest = 0;
         String name = null;
         for (int i = 0; i < students.length; i++) {
