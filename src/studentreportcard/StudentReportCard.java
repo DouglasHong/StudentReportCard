@@ -263,7 +263,7 @@ public class StudentReportCard {
             String score = students[i][1];
             if (name != null) {
 
-                System.out.println(name + "has a score of " + score);
+                System.out.println(name + " has a score of " + score);
 
             }
         }
@@ -271,7 +271,7 @@ public class StudentReportCard {
 
     public static String[][] addStudent(String[][] students) {
         Scanner scanner2 = new Scanner(System.in);
-        System.out.println("Please enter a student name>");
+        System.out.println("Please enter a student name:");
         String name = scanner2.nextLine();
         System.out.println("what is the score for " + name + "?");
         String score = scanner2.nextLine();
